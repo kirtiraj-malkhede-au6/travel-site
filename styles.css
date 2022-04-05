@@ -87,7 +87,7 @@ header {
   font-size: 6vmin;
   color: var(--primaryColor);
 }
-.navbar ul {
+.navbar-links {
   width: 70rem;
   padding: 0.5rem 2rem;
   font-size: 3vmin;
@@ -116,7 +116,7 @@ header {
   background-color: rgb(255, 255, 255);
   border-style: none;
 }
-.menu {
+.mobile-menu {
   padding: 0.5rem;
   position: absolute;
   top: 2rem;
@@ -127,14 +127,13 @@ header {
   border-radius: 1rem;
   opacity: 0;
 }
-.menu img {
-  height: 100%;
-  width: 100%;
-}
 
 /* mobile device css */
 
 @media only screen and (max-width: 768px) {
+  .hide {
+    opacity: 0;
+  }
   .navbar {
     padding: 0;
   }
@@ -143,27 +142,28 @@ header {
     top: 30px;
     left: 30px;
   }
-  .navbar ul {
+  .navbar-links {
+    justify-content: space-evenly;
     height: 75vh;
     border-radius: 0;
     padding: 0;
     position: absolute;
     top: 15vh;
     right: 0px;
+    display: flex;
     flex-direction: column;
-    width: 15vmin;
-    justify-content: center;
+    width: fit-content;
     background: rgba(238, 238, 238, 0.467);
+    align-items: center;
+    align-content: center;
+    transition: all 0.5s ease;
   }
-  .navbar ul {
-    padding: 5vh auto;
-    justify-content: space-around;
-  }
+
   .links {
     font-size: 4vw;
     font-weight: bold;
   }
-  .menu {
+  .mobile-menu {
     position: absolute;
     right: 3vw;
     top: 3vh;
