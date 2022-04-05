@@ -64,7 +64,6 @@ header {
   font-weight: 600;
   color: rgb(255, 255, 255);
   background-color: var(--primaryColor);
-  border-radius: 1rem;
 }
 .btn-main:hover {
   color: black;
@@ -115,6 +114,7 @@ header {
   border-radius: 1rem;
   color: black;
   background-color: rgb(255, 255, 255);
+  border-style: none;
 }
 .menu {
   padding: 0.5rem;
@@ -155,8 +155,13 @@ header {
     justify-content: center;
     background: rgba(238, 238, 238, 0.467);
   }
-  .navbar ul li {
-    margin: 30px auto;
+  .navbar ul {
+    padding: 5vh auto;
+    justify-content: space-around;
+  }
+  .links {
+    font-size: 4vw;
+    font-weight: bold;
   }
   .menu {
     position: absolute;
@@ -166,7 +171,8 @@ header {
   }
   .btn-contact {
     padding: 0.5rem 0.5rem;
-    font-size: 3vmin;
+    font-size: 4vw;
+    font-weight: bold;
     background-color: var(--primaryColor);
     color: rgb(255, 255, 255);
   }
