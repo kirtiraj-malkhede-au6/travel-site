@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+a,
+li,
+button {
+  text-decoration: none;
+  list-style: none;
+  border-style: none;
+}
+header {
+  height: 100vh;
+  background-image: url("/images/main-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container {
+  width: 80vw;
+  padding: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.header-container h2 {
+  font-size: 6vmin;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.header-container .line {
+  height: 4px;
+  width: 20rem;
+  background-color: rgb(255, 0, 140);
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+.header-container h1 {
+  text-transform: capitalize;
+  font-size: 7vmin;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.btn-main {
+  padding: 1rem;
+  font-size: 3vmin;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 140);
+  border-radius: 1rem;
+}
+.btn-main:hover {
+  color: black;
+}
+.navbar {
+  padding: 2rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+.navbar h1 {
+  font-weight: bolder;
+  height: 7vmin;
+  font-size: 6vmin;
+  color: rgb(255, 0, 140);
+}
+.navbar ul {
+  width: 40rem;
+  padding: 0.5rem 2rem;
+  font-size: 3vmin;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.536);
+}
+.navbar li {
+  /* padding-inline: 4vmin; */
+}
+.navbar a {
+  font-weight: 500;
+  color: black;
+}
+.navbar a:hover {
+  font-weight: 600;
+  color: rgb(255, 0, 140);
+  text-decoration: underline;
+}
+.btn-contact {
+  padding: 0.5rem 1.5rem;
+  font-size: 3vmin;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.menu {
+  padding: 0.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.502);
+  border-radius: 1rem;
+  opacity: 0;
+}
+.menu img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .navbar h1 {
+    font-size: 8min;
+  }
+  .navbar ul {
+    opacity: 0;
+  }
+  .navbar .btn-contact {
+    opacity: 0;
+  }
+  .menu {
+    opacity: 1;
+  }
+}
